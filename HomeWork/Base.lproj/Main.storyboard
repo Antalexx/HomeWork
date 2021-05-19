@@ -16,29 +16,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lIo-BT-kHO">
-                                <rect key="frame" x="17" y="84" width="380" height="378"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="4aS-1u-D4i">
-                                <rect key="frame" x="17" y="469" width="380" height="378"/>
+                                <rect key="frame" x="17" y="469" width="380" height="400"/>
                                 <color key="backgroundColor" systemColor="systemPinkColor"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lIo-BT-kHO">
+                                <rect key="frame" x="17" y="44" width="380" height="400"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="4aS-1u-D4i" firstAttribute="height" secondItem="lIo-BT-kHO" secondAttribute="height" id="3Bg-d3-vP3"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="4aS-1u-D4i" secondAttribute="bottom" constant="15" id="Al6-aJ-cPt"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lIo-BT-kHO" secondAttribute="trailing" constant="17" id="ITm-4U-opf"/>
-                            <constraint firstItem="lIo-BT-kHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="QD8-b7-7kR"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lIo-BT-kHO" secondAttribute="trailing" constant="17" id="Ufw-DW-le9"/>
-                            <constraint firstItem="lIo-BT-kHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="ZMU-ZH-7zI"/>
-                            <constraint firstItem="4aS-1u-D4i" firstAttribute="width" secondItem="lIo-BT-kHO" secondAttribute="width" id="eUC-qk-mhm"/>
-                            <constraint firstItem="4aS-1u-D4i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="i6p-pk-b5D"/>
-                            <constraint firstItem="4aS-1u-D4i" firstAttribute="top" secondItem="lIo-BT-kHO" secondAttribute="bottom" constant="7" id="nxu-NK-Ng4"/>
-                            <constraint firstItem="lIo-BT-kHO" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="topMargin" constant="40" id="oBy-eT-XWD"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4aS-1u-D4i" secondAttribute="trailing" constant="17" id="sGH-Ex-Pdy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4aS-1u-D4i" secondAttribute="trailing" constant="17" id="3Lg-wp-n5e"/>
+                            <constraint firstItem="4aS-1u-D4i" firstAttribute="height" secondItem="lIo-BT-kHO" secondAttribute="height" id="8vm-gQ-h5P"/>
+                            <constraint firstItem="4aS-1u-D4i" firstAttribute="width" secondItem="lIo-BT-kHO" secondAttribute="width" id="C4W-RF-HEF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lIo-BT-kHO" secondAttribute="trailing" constant="17" id="LRn-Da-hkw"/>
+                            <constraint firstItem="lIo-BT-kHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="LqU-Z1-Zfq"/>
+                            <constraint firstItem="lIo-BT-kHO" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="NHn-df-9GA"/>
+                            <constraint firstItem="4aS-1u-D4i" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="RcU-bb-PfI"/>
+                            <constraint firstAttribute="bottom" secondItem="4aS-1u-D4i" secondAttribute="bottom" constant="27" id="WXS-Kl-HF5"/>
+                            <constraint firstItem="lIo-BT-kHO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="17" id="e8I-dc-VNj"/>
+                            <constraint firstItem="4aS-1u-D4i" firstAttribute="top" secondItem="lIo-BT-kHO" secondAttribute="bottom" constant="25" id="omG-KZ-233"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lIo-BT-kHO" secondAttribute="trailing" constant="17" id="ppH-YG-uXs"/>
                         </constraints>
                     </view>
                 </viewController>
