@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Item-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HomeWork" customModuleProvider="target" sceneMemberID="viewController">
@@ -41,13 +41,87 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lIo-BT-kHO" secondAttribute="trailing" constant="17" id="ppH-YG-uXs"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="FPE-xS-Eo2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="20" y="94"/>
+            <point key="canvasLocation" x="1839.1304347826087" y="93.75"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="6Gs-EM-mqB">
+            <objects>
+                <viewController id="3DI-aa-Yy2" customClass="ViewController" customModule="HomeWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1aA-8A-9SO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d6R-NW-86f" userLabel="Red">
+                                <rect key="frame" x="87" y="77" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Eit-WH-ZZR" userLabel="Yellow">
+                                <rect key="frame" x="87" y="275" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ovL-vR-Rxm" userLabel="Green">
+                                <rect key="frame" x="87" y="469" width="240" height="128"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor"/>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IEt-tA-e5Y">
+                                <rect key="frame" x="87" y="702" width="240" height="120"/>
+                                <color key="backgroundColor" systemColor="systemPurpleColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Start">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <color key="titleShadowColor" systemColor="secondarySystemFillColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedStart" destination="3DI-aa-Yy2" eventType="touchUpInside" id="STu-41-zMq"/>
+                                    <action selector="tappedStart:" destination="3DI-aa-Yy2" eventType="touchUpInside" id="xKW-cJ-jnd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dhp-NO-a40"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="IEt-tA-e5Y" firstAttribute="top" secondItem="Dhp-NO-a40" secondAttribute="top" constant="658" id="1aO-nT-H4P"/>
+                            <constraint firstItem="ovL-vR-Rxm" firstAttribute="top" secondItem="Eit-WH-ZZR" secondAttribute="bottom" constant="66" id="25H-80-aeV"/>
+                            <constraint firstItem="Eit-WH-ZZR" firstAttribute="top" secondItem="d6R-NW-86f" secondAttribute="bottom" constant="70" id="4EV-gK-4vd"/>
+                            <constraint firstItem="Dhp-NO-a40" firstAttribute="trailing" secondItem="d6R-NW-86f" secondAttribute="trailing" constant="87" id="6qx-f8-nGw"/>
+                            <constraint firstItem="d6R-NW-86f" firstAttribute="leading" secondItem="Dhp-NO-a40" secondAttribute="leading" constant="87" id="AMx-tg-MHV"/>
+                            <constraint firstItem="Eit-WH-ZZR" firstAttribute="leading" secondItem="Dhp-NO-a40" secondAttribute="leading" constant="87" id="D0t-wT-b8O"/>
+                            <constraint firstItem="ovL-vR-Rxm" firstAttribute="height" secondItem="d6R-NW-86f" secondAttribute="height" id="GT5-Al-BfF"/>
+                            <constraint firstItem="Eit-WH-ZZR" firstAttribute="width" secondItem="d6R-NW-86f" secondAttribute="width" id="Ogr-gi-9nb"/>
+                            <constraint firstItem="ovL-vR-Rxm" firstAttribute="leading" secondItem="Dhp-NO-a40" secondAttribute="leading" constant="87" id="Ot9-PV-iIu"/>
+                            <constraint firstItem="Dhp-NO-a40" firstAttribute="bottom" secondItem="ovL-vR-Rxm" secondAttribute="bottom" constant="265" id="RhN-Nd-sBd"/>
+                            <constraint firstItem="ovL-vR-Rxm" firstAttribute="width" secondItem="d6R-NW-86f" secondAttribute="width" id="YEE-Im-exe"/>
+                            <constraint firstItem="Dhp-NO-a40" firstAttribute="trailing" secondItem="IEt-tA-e5Y" secondAttribute="trailing" constant="87" id="ZNm-t6-QIu"/>
+                            <constraint firstItem="d6R-NW-86f" firstAttribute="top" secondItem="Dhp-NO-a40" secondAttribute="top" constant="33" id="cn2-Cd-wBn"/>
+                            <constraint firstItem="ovL-vR-Rxm" firstAttribute="top" secondItem="Eit-WH-ZZR" secondAttribute="bottom" constant="66" id="g4g-xI-Y8e"/>
+                            <constraint firstItem="Dhp-NO-a40" firstAttribute="trailing" secondItem="ovL-vR-Rxm" secondAttribute="trailing" constant="87" id="pUv-v6-wok"/>
+                            <constraint firstItem="Eit-WH-ZZR" firstAttribute="height" secondItem="d6R-NW-86f" secondAttribute="height" id="pfh-zL-Y3e"/>
+                            <constraint firstItem="Eit-WH-ZZR" firstAttribute="top" secondItem="d6R-NW-86f" secondAttribute="bottom" constant="70" id="q76-nY-Kc6"/>
+                            <constraint firstItem="Dhp-NO-a40" firstAttribute="bottom" secondItem="IEt-tA-e5Y" secondAttribute="bottom" constant="40" id="qs8-uf-g1C"/>
+                            <constraint firstItem="IEt-tA-e5Y" firstAttribute="leading" secondItem="Dhp-NO-a40" secondAttribute="leading" constant="87" id="rb6-M5-o0Q"/>
+                            <constraint firstItem="Dhp-NO-a40" firstAttribute="trailing" secondItem="Eit-WH-ZZR" secondAttribute="trailing" constant="87" id="uzP-3M-S6H"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="Gnq-RN-Zmh"/>
+                    <connections>
+                        <outlet property="greenView" destination="ovL-vR-Rxm" id="rIu-s1-Dwa"/>
+                        <outlet property="redView" destination="d6R-NW-86f" id="rTo-RQ-dGD"/>
+                        <outlet property="yellowView" destination="Eit-WH-ZZR" id="HU2-Ss-Qal"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G2y-nk-bIK" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1839.1304347826087" y="93.75"/>
         </scene>
     </scenes>
     <resources>
+        <systemColor name="secondarySystemFillColor">
+            <color red="0.47058823529411764" green="0.47058823529411764" blue="0.50196078431372548" alpha="0.16" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
@@ -56,6 +130,15 @@
         </systemColor>
         <systemColor name="systemPinkColor">
             <color red="1" green="0.17647058823529413" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemPurpleColor">
+            <color red="0.68627450980392157" green="0.32156862745098042" blue="0.87058823529411766" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
